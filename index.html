@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrenador de Boxeo | Richard Perez Bran</title>
+    <meta
+      name="description"
+      content="Entrenador físico y profesor de boxeo profesional. Mejora tu condición física, aprende boxeo y alcanza tus objetivos con entrenamientos personalizados."
+    />
+    <meta
+      name="keywords"
+      content="boxeo, entrenador físico, clases de boxeo, entrenamiento personal, preparador físico, salud, deporte"
+    />
+    <meta name="author" content="Richard Perez Bran" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Header & Menu -->
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo entrenador de boxeo" />
+        <span>Richard Perez Bran</span>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="menu-burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Inicio -->
+    <section id="inicio" class="section">
+      <div class="hero">
+        <h1>Entrena como un campeón</h1>
+        <p>
+          Clases de boxeo y preparación física para todos los niveles. ¡Descubre
+          tu mejor versión!
+        </p>
+        <a href="#contacto" class="cta-btn">Agenda tu clase</a>
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="section fade-in">
+      <h2>Sobre mí</h2>
+      <div class="about-content">
+        <img src="perfil.jpg" alt="Foto del entrenador" class="about-photo" />
+        <div>
+          <p>
+            Soy Richard Pérez, entrenador físico y profesor de boxeo con más de
+            [X] años de experiencia. Ayudo a mis alumnos a alcanzar sus metas
+            con entrenamientos personalizados y motivadores.
+          </p>
+          <ul>
+            <li>Certificado en entrenamiento deportivo</li>
+            <li>Experiencia en boxeo profesional y amateur</li>
+            <li>Programas adaptados a cualquier nivel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="section fade-in">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="galeria1.jpg" alt="Clase de boxeo 1" />
+        <img src="galeria2.jpg" alt="Entrenamiento físico" />
+        <img src="galeria3.jpg" alt="Boxeador en acción" />
+        <img src="galeria4.jpg" alt="Grupo de alumnos" />
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section fade-in">
+      <h2>Servicios</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Clases de Boxeo</h3>
+          <p>
+            Aprende técnica, defensa y desarrollo físico con clases individuales
+            o grupales.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Entrenamiento Personalizado</h3>
+          <p>
+            Rutinas adaptadas a tus objetivos: fuerza, resistencia, pérdida de
+            peso y más.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Preparación Física</h3>
+          <p>
+            Mejora tu rendimiento atlético con métodos avanzados y seguimiento
+            profesional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section fade-in">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea
+          name="message"
+          placeholder="¿En qué puedo ayudarte?"
+          required
+        ></textarea>
+        <button type="submit">Enviar</button>
+        <div id="form-msg"></div>
+      </form>
+      <div class="contact-data">
+        <p><strong>Email:</strong> richiperez1504@gmail.com</p>
+        <p><strong>Teléfono:</strong> +56965683591</p>
+      </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/56978757949?text=Hola,%20quiero%20más%20información%20sobre%20las%20clases%20de%20boxeo"
+      class="whatsapp-btn"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <img src="whatsapp-icon.png" alt="WhatsApp" />
+    </a>
+
+    <footer>
+      <p>&copy; 2025 Richard Pérez Bran. | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+  </body>
+</html>
