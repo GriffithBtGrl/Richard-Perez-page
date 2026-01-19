@@ -116,20 +116,46 @@ nav ul li a:hover::after, nav ul li a:focus::after {
 }
 
 /* Hero con imagen de fondo + overlay */
+
 .hero {
-    text-align: center;
-    padding: 5rem 0;
     position: relative;
-    background: linear-gradient(160deg, rgba(35,35,37,0.93) 60%, rgba(215,38,61,0.15) 100%);
-    /* Reemplaza 'hero-bg.jpg' por tu imagen de fondo */
-    background-image: url('../img/Mi-Esposa.jpg'), linear-gradient(160deg, rgba(35,35,37,0.93) 60%, rgba(215,38,61,0.15) 100%);
+
+    min-height: 65vh; 
+    padding: 6rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('../img/Richi_boxing.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 0 0 40px 40px;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.20);
+
     color: var(--white);
     overflow: hidden;
+    border-radius: 0 0 40px 40px;
 }
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(20,20,22,0.65),
+        rgba(20,20,22,0.45),
+        rgba(20,20,22,0.65)
+    );
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
 
 .hero h1 {
     font-size: 2.5rem;
@@ -177,9 +203,12 @@ nav ul li a:hover::after, nav ul li a:focus::after {
 }
 
 .about-photo {
-    width: 200px;
-    border-radius: 50%;
-    box-shadow: 0 2px 14px rgba(215,38,61,0.18);
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 3/4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
     border: 4px solid var(--main-color);
 }
 
@@ -359,6 +388,14 @@ footer {
         flex-direction: row;
         padding: 1rem;
     }
+
+    .hero {
+        min-height: 90vh;
+        padding: 5rem 1.5rem;
+
+        background-position: top center; 
+    }
+
     nav ul {
         flex-direction: column;
         gap: 2rem;
